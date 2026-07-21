@@ -147,10 +147,10 @@ console.log("Final Amount:", finalAmount);
 
 
 // Task 17 - Employee Promotion
-let experience = 5;
+let exp = 5;
 let performance = true;
 
-console.log((experience >= 5 && performance === true) ? "Promotion Approved" : "Promotion Pending");
+console.log((exp >= 5 && performance === true) ? "Promotion Approved" : "Promotion Pending");
 
 
 // Task 18 - Movie Ticket
