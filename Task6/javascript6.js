@@ -2,7 +2,7 @@
 
 const employeeName = "Srikanth";
 
-// Gwewill get current  date and time
+// We will get current  date and time
 const checkInTime = new Date();
 
 console.log("Employee:", employeeName);
