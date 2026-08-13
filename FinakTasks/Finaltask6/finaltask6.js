@@ -24,6 +24,7 @@ fetch("https://fakestoreapi.com/products")
 .then(data=>{
     data.forEach(product=>{
         let card=document.createElement("div")
+        card.classList.add("card");
        card.innerHTML = `
             <h3>${product.title}</h3>
             <img src="${product.image}">
@@ -32,7 +33,7 @@ fetch("https://fakestoreapi.com/products")
             <p>Price: $${product.price} </p>
             <p>Rating: ${product.rating.rate}</p>
         `;
-         container3.append(card);
+         container3.appendChild(card);
 
     });
 

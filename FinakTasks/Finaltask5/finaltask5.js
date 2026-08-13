@@ -20,7 +20,7 @@ fetch("https://fakestoreapi.com/products")
         <p>Category: ${product.category}</p>
         <p>Price: ${product.price}</p>
         `;
-         container3.append(card);
+         container3.appendChild(card);
 
     })
     

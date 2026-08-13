@@ -14,11 +14,12 @@ fetch("https://fakestoreapi.com/products")
 .then(data=>{
     data.forEach(product=>{
         let card=document.createElement("div")
+        card.classList.add("card");
         card.innerHTML=`
         <h3>Title: ${product.title}</h3>
         <p>Price: $${product.price}</p>
         <button>Buy for $${product.price}</button>
         `;
-        container6.append(card);
+        container6.appendChild(card);
     })
 })

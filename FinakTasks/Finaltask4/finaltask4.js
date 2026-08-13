@@ -8,7 +8,7 @@
 // document.createElement("img")
 // Use the API's image property.
 
-let images =document.querySelector(".images");
+let images =document.querySelector(".container20");
 fetch("https://fakestoreapi.com/products")
 .then(response=>response.json())
 .then(data=>{
@@ -18,7 +18,7 @@ fetch("https://fakestoreapi.com/products")
       image.alt = product.title;
       image.width = 100;
       image.height = 100;
-      images.append(image)
+      images.appendChild(image)
 
     })
 })

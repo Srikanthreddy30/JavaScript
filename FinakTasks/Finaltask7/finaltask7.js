@@ -19,11 +19,12 @@ fetch("https://fakestoreapi.com/products")
 .then(data=>{
     data.forEach(product=>{
         let card=document.createElement("div")
+        card.classList.add("card");
         card.innerHTML=`
         <h3>Product: ${product.title}</h3>
         <p>Rating: ${product.rating.rate}</p>
         <p>Reviews: ${product.rating.count}</p>
         `;
-        container4.append(card);
+        container4.appendChild(card);
     })
 })
